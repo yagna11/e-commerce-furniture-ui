@@ -1,0 +1,291 @@
+{
+    "products": [
+      {
+        "category": "Coffee Tables",
+        "items": [
+          {
+            "name": "Stella Coffee Table - 1 Unit",
+            "price": 210,
+            "financingOption": true,
+            "customizable": true,
+            "woodType": "Oak"
+          },
+          {
+            "name": "Stella Coffee Table - 2 Units",
+            "price": 420,
+            "financingOption": true,
+            "customizable": true,
+            "woodType": "Walnut"
+          },
+          {
+            "name": "Pluto Coffee Table",
+            "price": 135,
+            "financingOption": true,
+            "customizable": true,
+            "woodType": "Black"
+          },
+          {
+            "name": "Stella Coffee Table - 3 Units",
+            "price": 630,
+            "financingOption": true,
+            "customizable": true,
+            "woodType": "Oak"
+          },
+          {
+            "name": "Pluto Coffee Table",
+            "price": 135,
+            "financingOption": true,
+            "customizable": true,
+            "woodType": "Espresso"
+          },
+          {
+            "name": "Stella Coffee Table - 1 Unit",
+            "price": 210,
+            "financingOption": true,
+            "customizable": true,
+            "woodType": "Walnut"
+          },
+          {
+            "name": "Stella Coffee Table - 2 Units",
+            "price": 420,
+            "financingOption": true,
+            "customizable": true,
+            "woodType": "Walnut"
+          },
+          {
+            "name": "Stella Coffee Table - 3 Units",
+            "price": 630,
+            "financingOption": true,
+            "customizable": true,
+            "woodType": "Walnut"
+          }
+        ]
+      },
+      {
+        "category": "Side Tables",
+        "items": [
+          {
+            "name": "Solis Adjustable Table",
+            "price": 180,
+            "financingOption": true,
+            "customizable": true,
+            "woodType": "Eclipse"
+          },
+          {
+            "name": "Solis Adjustable Table",
+            "price": 180,
+            "financingOption": true,
+            "customizable": true,
+            "woodType": "Twilight"
+          },
+          {
+            "name": "Solis Adjustable Table",
+            "price": 180,
+            "financingOption": true,
+            "customizable": true,
+            "woodType": "Solstice"
+          },
+          {
+            "name": "Stella Coffee Table - 1 Unit",
+            "price": 210,
+            "financingOption": true,
+            "customizable": true,
+            "woodType": "Walnut"
+          },
+          {
+            "name": "Stella Coffee Table - 1 Unit",
+            "price": 210,
+            "financingOption": true,
+            "customizable": true,
+            "woodType": "Oak"
+          },
+          {
+            "name": "Pluto Side Table",
+            "price": 85,
+            "financingOption": true,
+            "customizable": true,
+            "woodType": "Espresso"
+          },
+          {
+            "name": "Pluto Side Table",
+            "price": 85,
+            "financingOption": true,
+            "customizable": true,
+            "woodType": "Black Wood"
+          },
+          {
+            "name": "Stella Media Unit - 1 Unit | No Door",
+            "price": 145,
+            "financingOption": true,
+            "customizable": true,
+            "woodType": "Walnut"
+          },
+          {
+            "name": "Stella Media Unit - 1 Unit | No Door",
+            "price": 145,
+            "financingOption": true,
+            "customizable": true,
+            "woodType": "Oak"
+          },
+          {
+            "name": "Stella Media Unit - 1 Unit | With Door",
+            "price": 165,
+            "financingOption": true,
+            "customizable": true,
+            "woodType": "Walnut"
+          },
+          {
+            "name": "Stella Media Unit - 1 Unit | With Door",
+            "price": 165,
+            "financingOption": true,
+            "customizable": true,
+            "woodType": "Oak"
+          }
+        ]
+      },
+      {
+        "category": "Media Units",
+        "items": [
+          {
+            "name": "Stella Media Unit - 3 Units",
+            "price": 475,
+            "financingOption": true,
+            "customizable": true,
+            "woodType": "Walnut"
+          },
+          {
+            "name": "Stella Media Unit - 2 Units | With Doors",
+            "price": 330,
+            "financingOption": true,
+            "customizable": true,
+            "woodType": "Oak"
+          },
+          {
+            "name": "Stella Media Unit - 1 Unit | With Door",
+            "price": 165,
+            "financingOption": true,
+            "customizable": true,
+            "woodType": "Oak"
+          },
+          {
+            "name": "Stella Media Unit - 1 Unit | No Door",
+            "price": 145,
+            "financingOption": true,
+            "customizable": true,
+            "woodType": "Oak"
+          },
+          {
+            "name": "Stella Media Unit - 2 Units",
+            "price": 310,
+            "financingOption": true,
+            "customizable": true,
+            "woodType": "Walnut"
+          },
+          {
+            "name": "Stella Media Unit - 2 Units | No Doors",
+            "price": 290,
+            "financingOption": true,
+            "customizable": true,
+            "woodType": "Oak"
+          },
+          {
+            "name": "Stella Media Unit - 3 Units",
+            "price": 475,
+            "financingOption": true,
+            "customizable": true,
+            "woodType": "Oak"
+          },
+          {
+            "name": "Stella Media Unit - 3 Units | No Doors",
+            "price": 435,
+            "financingOption": true,
+            "customizable": true,
+            "woodType": "Walnut"
+          },
+          {
+            "name": "Stella Media Unit - 4 Units",
+            "price": 620,
+            "financingOption": true,
+            "customizable": true,
+            "woodType": "Walnut"
+          },
+          {
+            "name": "Stella Media Unit - 4 Units | No Doors",
+            "price": 580,
+            "financingOption": true,
+            "customizable": true,
+            "woodType": "Oak"
+          },
+          {
+            "name": "Stella Media Unit - 2 Units",
+            "price": 310,
+            "financingOption": true,
+            "customizable": true,
+            "woodType": "Oak"
+          },
+          {
+            "name": "Stella Media Unit - 2 Units | No Doors",
+            "price": 290,
+            "financingOption": true,
+            "customizable": true,
+            "woodType": "Walnut"
+          }
+        ]
+      },
+      {
+        "category": "Table Sets",
+        "items": [
+          {
+            "name": "Pluto Table Set | 1 Coffee Table & 1 Side Table",
+            "price": 195,
+            "discount": "Save 10%",
+            "customizable": true,
+            "woodType": "Black Wood"
+          },
+          {
+            "name": "Pluto Table Set | 1 Coffee Table & 2 Side Tables",
+            "price": 255,
+            "discount": "Save 15%",
+            "customizable": true,
+            "woodType": "Espresso"
+          },
+          {
+            "name": "Pair of Solis Adjustable Tables",
+            "price": 320,
+            "discount": "Save 10%",
+            "customizable": true,
+            "woodType": "Eclipse"
+          },
+          {
+            "name": "Stella Table Set | 2-Unit Media & 2-Unit Coffee Table",
+            "price": 505,
+            "discount": "Save 15%",
+            "customizable": true,
+            "woodType": "Walnut"
+          },
+          {
+            "name": "Stella Table Set | 2-Unit Media & 1 Side Table",
+            "price": 465,
+            "discount": "Save 10%",
+            "customizable": true,
+            "woodType": "Walnut"
+          },
+          {
+            "name": "Stella Table Set | 3-Unit Media & 2-Unit Coffee Table",
+            "price": 715,
+            "discount": "Save 20%",
+            "customizable": true,
+            "woodType": "Oak"
+          },
+          {
+            "name": "Stella Table Set | 3-Unit Media & 1 Side Table",
+            "price": 580,
+            "discount": "Save 15%",
+            "customizable": true,
+            "woodType": "Oak"
+          }
+        ]
+      }      
+    ]
+  }
+  
