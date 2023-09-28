@@ -140,7 +140,7 @@
           "financingOption": true,
           "customizable": true,
           "woodType": "Black Wood",
-          "woodColor": "0A0401",
+          "woodColor": "#0A0401",
           "imagePath": "./images/tinywow_15_28381520.webp"
         },
         {

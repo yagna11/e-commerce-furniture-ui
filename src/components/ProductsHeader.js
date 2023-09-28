@@ -1,10 +1,16 @@
 import React from "react";
 import { makeStyles } from "@mui/styles";
+import MobileDropdown from "./MobileDropdown";
+import useMediaQuery from "@mui/material/useMediaQuery";
 import "../fonts.css";
 
 const ProductsHeader = ({ items }) => {
   const classes = useStyles();
-  return (
+  const isMobile = useMediaQuery("(max-width:870px)");
+
+  return isMobile ? (
+    <MobileDropdown items={items} />
+  ) : (
     <div className={classes.banner}>
       <div className={classes.bannerText}>
         {items.map((item) => (
@@ -33,6 +39,14 @@ const useStyles = makeStyles(() => ({
     display: "flex",
     justifyContent: "space-evenly",
     width: "100%",
+    "@media (min-width: 1200px)": {
+      display: "flex",
+      justifyContent: "flex-start",
+      marginLeft: "auto",
+      marginRight: "auto",
+      padding: "0px 80px",
+      gap: "48px",
+    },
   },
 }));
 

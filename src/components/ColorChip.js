@@ -20,7 +20,6 @@ const useStyles = makeStyles(() => ({
     position: "absolute",
     bottom: 12,
     right: 12,
-    padding: 4,
     backgroundColor: "rgb(255, 255, 255)",
     border: "0.5px solid rgb(190, 200, 219)",
     borderRadius: 100,

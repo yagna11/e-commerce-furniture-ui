@@ -18,7 +18,7 @@ const ProductsList = () => {
 
   return (
     <div>
-      <div className={classes.topBar}></div>
+      <div className={classes.topBar} />
       <header className={classes.header}>cozey</header>
       <div className={classes.titleContainer}>
         <div className={classes.title}>Tables</div>
@@ -40,20 +40,33 @@ const ProductsList = () => {
                   <ColorChip name={item.woodType} color={item.woodColor} />
                 </div>
                 <span className={classes.productName}>{item.name}</span> <br />
-                <span className={classes.productPrice}>
-                  ${item.price}
-                  {item.financingOption && " or financing"}
-                </span>
-                <span className={classes.divider}> | </span>
-                <div className={classes.productCustomizerContainer}>
-                  {item.customizable && (
-                    <span className={classes.productCustomizer}>
-                      {" "}
-                      Customize
-                    </span>
+                <div className={classes.priceContainer}>
+                  <span className={classes.productPrice}>
+                    ${item.price}
+                    {item.financingOption && " or financing"}
+                  </span>
+
+                  <span className={classes.divider}> | </span>
+                  {item.discount && (
+                    <div className={classes.productDiscount}>
+                      {item.discount}
+                    </div>
                   )}
-                  <div className={classes.arrowIcon}>
-                    <ArrowForwardIcon />
+
+                  <div
+                    className={classes.productCustomizerContainer}
+                    style={{
+                      flexBasis: item.discount && "100%",
+                    }}
+                  >
+                    {item.customizable && (
+                      <span className={classes.productCustomizer}>
+                        Customise
+                      </span>
+                    )}
+                    <div className={classes.arrowIcon}>
+                      <ArrowForwardIcon />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -61,6 +74,7 @@ const ProductsList = () => {
           </div>
         </div>
       ))}
+      <div className={classes.footer}></div>
     </div>
   );
 };
@@ -130,6 +144,12 @@ const useStyles = makeStyles(() => ({
     fontFamily: "CamptonSemiBold",
     fontSize: 14,
   },
+  priceContainer: {
+    display: "flex",
+    alignItems: "center",
+    gap: "4px",
+    flexWrap: "wrap",
+  },
   productPrice: {
     color: "rgb(83, 84, 138)",
     fontFamily: "Larsseit",
@@ -137,6 +157,11 @@ const useStyles = makeStyles(() => ({
   },
   divider: {
     color: "rgb(83, 84, 138)",
+  },
+  productDiscount: {
+    color: "rgb(179, 92, 30)",
+    fontFamily: "Larsseit Bold",
+    fontSize: 14,
   },
   productCustomizerContainer: {
     display: "flex",
@@ -150,6 +175,11 @@ const useStyles = makeStyles(() => ({
     "& .MuiSvgIcon-root": {
       fontSize: 16,
     },
+  },
+  footer: {
+    marginTop: 40,
+    height: 150,
+    backgroundColor: "rgb(238,238,238)",
   },
 }));
 
