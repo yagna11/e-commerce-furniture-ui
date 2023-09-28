@@ -6,7 +6,12 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import { makeStyles } from "@mui/styles";
 import "../fonts.css";
 
-const headerItems = ["Coffee Tables", "Side Tables", "Media Units", "Table Sets"];
+const headerItems = [
+  "Coffee Tables",
+  "Side Tables",
+  "Media Units",
+  "Table Sets",
+];
 
 const ProductsList = () => {
   const classes = useStyles();
@@ -32,7 +37,7 @@ const ProductsList = () => {
                     alt={item.name}
                     className={classes.image}
                   />
-                   <ColorChip name={item.woodType} color={item.woodColor} /> 
+                  <ColorChip name={item.woodType} color={item.woodColor} />
                 </div>
                 <span className={classes.productName}>{item.name}</span> <br />
                 <span className={classes.productPrice}>
@@ -93,27 +98,27 @@ const useStyles = makeStyles(() => ({
     color: "rgb(43, 44, 110)",
     fontFamily: "Quincy Regular",
     fontSize: 32,
-    padding: '32px 80px 0px'
+    padding: "32px 80px 0px",
   },
   productContainer: {
     display: "grid",
     gridTemplateColumns: "repeat(3, 1fr)",
-    gap: "20px",
-    paddingLeft: "20px",
+    gap: 20,
+    paddingLeft: 20,
     margin: "0 auto",
-    maxWidth: "1280px",
+    maxWidth: 1280,
   },
 
   productItem: {
-    width: "300px",
+    width: 300,
   },
   productImage: {
-    position: "relative", 
-    width: "400px",
-    height: "300px",
+    position: "relative",
+    width: 400,
+    height: 300,
     padding: "30px 0",
     background: "#f5f6f8",
-    borderRadius: "30px",
+    borderRadius: 30,
     overflow: "hidden",
   },
   image: {
