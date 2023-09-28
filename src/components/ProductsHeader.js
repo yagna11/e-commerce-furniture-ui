@@ -14,7 +14,9 @@ const ProductsHeader = ({ items }) => {
     <div className={classes.banner}>
       <div className={classes.bannerText}>
         {items.map((item) => (
-          <span key={item}>{item}</span>
+          <a className= {classes.link} href={`#${item.replace(/\s+/g, "-").toLowerCase()}`} key={item}>
+            <span>{item}</span>
+          </a>
         ))}
       </div>
     </div>
@@ -48,6 +50,11 @@ const useStyles = makeStyles(() => ({
       gap: "48px",
     },
   },
+  link: {
+    color: 'inherit',
+    textDecoration: 'none',
+    cursor: 'pointer'
+  }
 }));
 
 export default ProductsHeader;

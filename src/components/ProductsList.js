@@ -26,7 +26,10 @@ const ProductsList = () => {
       </div>
       <ProductsHeader items={headerItems} />
       {productData.products.map((category) => (
-        <div key={category.category}>
+        <div key={category.category} id={category.category.replace(/\s+/g, "-").toLowerCase()} style={{
+          marginTop: '-50px',
+          paddingTop: '50px'
+        }}>
           <h2 className={classes.category}>{category.category}</h2>
           <div className={classes.productContainer}>
             {category.items.map((item) => (
@@ -113,6 +116,13 @@ const useStyles = makeStyles(() => ({
     fontFamily: "Quincy Regular",
     fontSize: 32,
     padding: "32px 80px 0px",
+    "&::before": {
+      content: "''",
+      display: "block",
+      height: 60, 
+      marginTop: -60, 
+      visibility: "hidden",
+    }
   },
   productContainer: {
     display: "grid",
