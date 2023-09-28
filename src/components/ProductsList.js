@@ -1,8 +1,12 @@
 import React from "react";
 import productData from "../data/products.json";
+import ProductsHeader from "./ProductsHeader";
+import ColorChip from "./ColorChip";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import { makeStyles } from "@mui/styles";
 import "../fonts.css";
+
+const headerItems = ["Coffee Tables", "Side Tables", "Media Units", "Table Sets"];
 
 const ProductsList = () => {
   const classes = useStyles();
@@ -15,14 +19,7 @@ const ProductsList = () => {
         <div className={classes.title}>Tables</div>
         <div className={classes.subText}>A perfect pairing to your sofa.</div>
       </div>
-      <div className={classes.banner}>
-        <div className={classes.bannerText}>
-          <span>Coffee Tables</span>
-          <span>Side Tables</span>
-          <span>Media Units</span>
-          <span>Table Sets</span>
-        </div>
-      </div>
+      <ProductsHeader items={headerItems} />
       {productData.products.map((category) => (
         <div key={category.category}>
           <h2 className={classes.category}>{category.category}</h2>
@@ -35,6 +32,7 @@ const ProductsList = () => {
                     alt={item.name}
                     className={classes.image}
                   />
+                   <ColorChip name={item.woodType} color={item.woodColor} /> 
                 </div>
                 <span className={classes.productName}>{item.name}</span> <br />
                 <span className={classes.productPrice}>
@@ -83,49 +81,36 @@ const useStyles = makeStyles(() => ({
   title: {
     color: "rgb(43, 44, 110)",
     fontFamily: "QuincyCFBold",
-    fontSize: 44,
+    fontSize: 60,
   },
   subText: {
     color: "rgb(25, 20, 43)",
     fontFamily: "Larsseit Medium",
-    fontSize: 18,
-  },
-  banner: {
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    backgroundColor: "rgb(25, 20, 43)",
-    position: "sticky",
-    top: 0,
-    height: "60px",
-  },
-  bannerText: {
-    color: "rgb(212, 218, 231)",
-    fontFamily: "Larsseit",
-    fontSize: 16,
-    display: "flex",
-    justifyContent: "space-evenly",
-    width: "100%",
+    fontSize: 20,
   },
   category: {
     textAlign: "center",
     color: "rgb(43, 44, 110)",
     fontFamily: "Quincy Regular",
     fontSize: 32,
+    padding: '32px 80px 0px'
   },
   productContainer: {
-    display: "flex",
-    flexWrap: "wrap",
+    display: "grid",
+    gridTemplateColumns: "repeat(3, 1fr)",
     gap: "20px",
-    alignItems: "center",
     paddingLeft: "20px",
+    margin: "0 auto",
+    maxWidth: "1280px",
   },
+
   productItem: {
     width: "300px",
   },
   productImage: {
-    width: "300px",
-    height: "200px",
+    position: "relative", 
+    width: "400px",
+    height: "300px",
     padding: "30px 0",
     background: "#f5f6f8",
     borderRadius: "30px",
