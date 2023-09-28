@@ -1,0 +1,353 @@
+@font-face {
+  font-family: "Quincy Bold";
+  src: url("/public/fonts/QuincyCF/quincybold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Quincy CF Black";
+  src: url("/public/fonts/QuincyCF/QuincyCF-Black.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "QuincyCFBlackItalic";
+  src: url("/public/fonts/QuincyCF/QuincyCF-BlackItalic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "QuincyCFBold";
+  src: url("/public/fonts/QuincyCF/QuincyCF-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Quincy CF Bold Italic";
+  src: url("/public/fonts/QuincyCF/QuincyCF-BoldItalic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Quincy CF Extra Bold";
+  src: url("/public/fonts/QuincyCF/QuincyCF-ExtraBold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Quincy CF Extra Bold Italic";
+  src: url("/public/fonts/QuincyCF/QuincyCF-ExtraBoldItalic.otf")
+    format("opentype");
+}
+
+@font-face {
+  font-family: "Quincy CF Light";
+  src: url("/public/fonts/QuincyCF/QuincyCF-Light.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Quincy CF Light Italic";
+  src: url("/public/fonts/QuincyCF/QuincyCF-LightItalic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Quincy CF Medium";
+  src: url("/public/fonts/QuincyCF/QuincyCF-Medium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Quincy CF Medium Italic";
+  src: url("/public/fonts/QuincyCF/QuincyCF-MediumItalic.otf")
+    format("opentype");
+}
+
+@font-face {
+  font-family: "Quincy CF Regular";
+  src: url("/public/fonts/QuincyCF/QuincyCF-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Quincy CF Regular Italic";
+  src: url("/public/fonts/QuincyCF/QuincyCF-RegularItalic.otf")
+    format("opentype");
+}
+
+@font-face {
+  font-family: "Quincy CF Text";
+  src: url("/public/fonts/QuincyCF/QuincyCF-Text.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Quincy CF Text Italic";
+  src: url("/public/fonts/QuincyCF/QuincyCF-TextItalic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Quincy CF Thin";
+  src: url("/public/fonts/QuincyCF/QuincyCF-Thin.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Quincy CF Thin Italic";
+  src: url("/public/fonts/QuincyCF/QuincyCF-ThinItalic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Quincy CF";
+  src: url("/public/fonts/QuincyCF/quincycf.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Quincy CF Light";
+  src: url("/public/fonts/QuincyCF/quincylight.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Quincy CF Black";
+  src: url("/public/fonts/Quincy/quincycf-black.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Quincy CF Black Italic";
+  src: url("/public/fonts/Quincy/quincycf-blackitalic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Quincy CF Bold";
+  src: url("/public/fonts/Quincy/quincycf-bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Quincy CF Bold Italic";
+  src: url("/public/fonts/Quincy/quincycf-bolditalic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Quincy CF Extra Bold";
+  src: url("/public/fonts/Quincy/quincycf-extrabold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Quincy CF Extra Bold Italic";
+  src: url("/public/fonts/Quincy/quincycf-extrabolditalic.otf")
+    format("opentype");
+}
+
+@font-face {
+  font-family: "Quincy CF Light";
+  src: url("/public/fonts/Quincy/quincycf-light.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Quincy CF Light Italic";
+  src: url("/public/fonts/Quincy/quincycf-lightitalic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Quincy CF Medium";
+  src: url("/public/fonts/Quincy/quincycf-medium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Quincy CF Medium Italic";
+  src: url("/public/fonts/Quincy/quincycf-mediumitalic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Quincy CF Regular";
+  src: url("/public/fonts/Quincy/quincycf-regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Quincy CF Regular Italic";
+  src: url("/public/fonts/Quincy/quincycf-regularitalic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Quincy CF Text";
+  src: url("/public/fonts/Quincy/quincycf-text.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Quincy CF Text Italic";
+  src: url("/public/fonts/Quincy/quincycf-textitalic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Quincy CF Thin";
+  src: url("/public/fonts/Quincy/quincycf-thin.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Quincy CF Thin Italic";
+  src: url("/public/fonts/Quincy/quincycf-thinitalic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Quincy CF R";
+  src: url("/public/fonts/Quincy/r.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Larsseit Bold";
+  src: url("/public/fonts/Larsseit/Larsseit-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Larsseit Bold Italic";
+  src: url("/public/fonts/Larsseit/Larsseit-BoldItalic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Larsseit Extra Bold";
+  src: url("/public/fonts/Larsseit/Larsseit-ExtraBold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Larsseit Extra Bold Italic";
+  src: url("/public/fonts/Larsseit/Larsseit-ExtraBoldItalic.otf")
+    format("opentype");
+}
+
+@font-face {
+  font-family: "Larsseit Italic";
+  src: url("/public/fonts/Larsseit/Larsseit-Italic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Larsseit Light";
+  src: url("/public/fonts/Larsseit/Larsseit-Light.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Larsseit Light Italic";
+  src: url("/public/fonts/Larsseit/Larsseit-LightItalic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Larsseit Medium";
+  src: url("/public/fonts/Larsseit/Larsseit-Medium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Larsseit Medium Italic";
+  src: url("/public/fonts/Larsseit/Larsseit-MediumItalic.otf")
+    format("opentype");
+}
+
+@font-face {
+  font-family: "Larsseit Thin";
+  src: url("/public/fonts/Larsseit/Larsseit-Thin.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Larsseit Thin Italic";
+  src: url("/public/fonts/Larsseit/Larsseit-ThinItalic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Larsseit";
+  src: url("/public/fonts/Larsseit/Larsseit.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Campton Black";
+  src: url("/public/fonts/Campton/Campton-Black.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Campton Black Italic";
+  src: url("/public/fonts/Campton/Campton-BlackItalic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Campton Bold";
+  src: url("/public/fonts/Campton/Campton-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Campton Bold Italic";
+  src: url("/public/fonts/Campton/Campton-BoldItalic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Campton Book";
+  src: url("/public/fonts/Campton/Campton-Book.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Campton Book Italic";
+  src: url("/public/fonts/Campton/Campton-BookItalic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Campton Extra Bold";
+  src: url("/public/fonts/Campton/Campton-ExtraBold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Campton Extra Bold Italic";
+  src: url("/public/fonts/Campton/Campton-ExtraBoldItalic.otf")
+    format("opentype");
+}
+
+@font-face {
+  font-family: "Campton Extra Light";
+  src: url("/public/fonts/Campton/Campton-ExtraLight.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Campton Extra Light Italic";
+  src: url("/public/fonts/Campton/Campton-ExtraLightItalic.otf")
+    format("opentype");
+}
+
+@font-face {
+  font-family: "Campton Light";
+  src: url("/public/fonts/Campton/Campton-Light.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Campton Light Italic";
+  src: url("/public/fonts/Campton/Campton-LightItalic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "CamptonMedium";
+  src: url("/public/fonts/Campton/Campton-Medium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Campton Medium Italic";
+  src: url("/public/fonts/Campton/Campton-MediumItalic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Campton Semi Bold";
+  src: url("/public/fonts/Campton/Campton-SemiBold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Campton Semi Bold Italic";
+  src: url("/public/fonts/Campton/Campton-SemiBoldItalic.otf")
+    format("opentype");
+}
+
+@font-face {
+  font-family: "Campton Thin";
+  src: url("/public/fonts/Campton/Campton-Thin.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Campton Thin Italic";
+  src: url("/public/fonts/Campton/Campton-ThinItalic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Campton Extra Light Alternate";
+  src: url("/public/fonts/Campton/CamptonExtraLight.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Campton Light Alternate";
+  src: url("/public/fonts/Campton/CamptonLight.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Campton Medium Alternate";
+  src: url("/public/fonts/Campton/CamptonMedium.otf") format("opentype");
+}
