@@ -109,7 +109,7 @@ const useStyles = makeStyles(() => ({
   },
   title: {
     color: "rgb(43, 44, 110)",
-    fontFamily: "QuincyCFBold",
+    fontFamily: "Quincy CF Bold",
     fontSize: 60,
     "@media (max-width: 1250px)": {
       fontSize: 44,
@@ -128,7 +128,7 @@ const useStyles = makeStyles(() => ({
   category: {
     textAlign: "center",
     color: "rgb(43, 44, 110)",
-    fontFamily: "Quincy Regular",
+    fontFamily: "Quincy CF Regular",
     fontSize: 32,
     padding: "32px 80px 0px",
     "@media (min-width: 1250px)": {
@@ -168,7 +168,7 @@ const useStyles = makeStyles(() => ({
   },
   productName: {
     color: "rgb(43, 44, 110)",
-    fontFamily: "CamptonSemiBold",
+    fontFamily: "Campton Semi Bold",
     fontSize: 14,
     cursor: "pointer",
     "@media (max-width: 750px)": {

@@ -43,7 +43,6 @@ const MobileDropdown = ({ items }) => {
 
 const useStyles = makeStyles({
   dropdownContainer: {
-    position: "absolute",
     zIndex: 100,
     position: "sticky",
     top: 0,
