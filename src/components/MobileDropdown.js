@@ -24,10 +24,16 @@ const MobileDropdown = ({ items }) => {
         </div>
       </div>
       {openHeader &&
-        items.slice(1).map((item) => (
-          <div key={item} className={classes.header}>
-            {item}
-          </div>
+        items.map((item) => (
+          <a
+            className={classes.link}
+            href={`#${item.replace(/\s+/g, "-").toLowerCase()}`}
+            key={item}
+          >
+            <div key={item} className={classes.header}>
+              {item}
+            </div>
+          </a>
         ))}
     </div>
   );
@@ -36,7 +42,9 @@ const MobileDropdown = ({ items }) => {
 const useStyles = makeStyles({
   dropdownContainer: {
     position: "absolute",
-    zIndex: 2,
+    zIndex: 100,
+    position: "sticky",
+    top: 0,
     width: "100%",
     overflow: "hidden",
     background: "#19142c",
@@ -48,7 +56,7 @@ const useStyles = makeStyles({
     display: "flex",
     alignItems: "center",
     justifyContent: "space-between",
-    margin: "0px 20px",
+    margin: "0px 30px",
     color: "rgb(212, 218, 231)",
     fontSize: 18,
     fontFamily: "Larsseit",
@@ -57,6 +65,11 @@ const useStyles = makeStyles({
   svgContainer: {
     width: 30,
     height: 30,
+  },
+  link: {
+    color: "inherit",
+    textDecoration: "none",
+    cursor: "pointer",
   },
 });
 

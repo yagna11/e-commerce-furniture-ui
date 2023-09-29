@@ -103,16 +103,27 @@ const useStyles = makeStyles(() => ({
   },
   titleContainer: {
     padding: "16px 80px",
+    "@media (max-width: 1250px)": {
+      padding: "16px 20px",
+    },
   },
   title: {
     color: "rgb(43, 44, 110)",
     fontFamily: "QuincyCFBold",
     fontSize: 60,
+    "@media (max-width: 1250px)": {
+      fontSize: 44,
+      paddingLeft: 16,
+    },
   },
   subText: {
     color: "rgb(25, 20, 43)",
     fontFamily: "Larsseit Medium",
     fontSize: 20,
+    "@media (max-width: 1250px)": {
+      fontSize: 18,
+      paddingLeft: 16,
+    },
   },
   category: {
     textAlign: "center",
@@ -120,12 +131,16 @@ const useStyles = makeStyles(() => ({
     fontFamily: "Quincy Regular",
     fontSize: 32,
     padding: "32px 80px 0px",
+    "@media (min-width: 1250px)": {
+      fontSize: 48,
+      textAlign: "start",
+    },
   },
   productContainer: {
     display: "grid",
     gridTemplateColumns: "repeat(3, 1fr)",
     gap: 40,
-    paddingLeft: 20,
+    padding: "0 20px",
     margin: "0 auto",
     maxWidth: 1440,
     "@media (max-width: 750px)": {
@@ -138,24 +153,28 @@ const useStyles = makeStyles(() => ({
     overflow: "hidden",
     marginBottom: 12,
     borderRadius: 30,
-   
+    cursor: "pointer",
     "@media (max-width: 750px)": {
       objectFit: "contain",
-      width: 400,
-      height: 300,
-      padding: "30px 0",
       background: "#f5f6f8",
+      borderRadius: 12,
     },
   },
   image: {
     width: "100%",
     height: "100%",
-    // borderRadius: 30,
+    "@media (max-width: 750px)": {
+      borderRadius: 0,
+    },
   },
   productName: {
     color: "rgb(43, 44, 110)",
     fontFamily: "CamptonSemiBold",
     fontSize: 14,
+    cursor: "pointer",
+    "@media (max-width: 750px)": {
+      fontSize: 12,
+    },
   },
   priceContainer: {
     display: "flex",
@@ -175,14 +194,19 @@ const useStyles = makeStyles(() => ({
     color: "rgb(179, 92, 30)",
     fontFamily: "Larsseit Bold",
     fontSize: 14,
+    cursor: "pointer",
   },
   productCustomizerContainer: {
     display: "flex",
     alignItems: "center",
+    cursor: "pointer",
   },
   productCustomizer: {
     fontSize: 10,
     fontFamily: "Larsseit Bold",
+    "@media (max-width: 750px)": {
+      fontSize: 9,
+    },
   },
   arrowIcon: {
     "& .MuiSvgIcon-root": {

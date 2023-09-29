@@ -27,18 +27,28 @@ const useStyles = makeStyles(() => ({
     alignItems: "center",
     padding: "6px 6px 6px 10px",
     cursor: "pointer",
+    "@media (max-width: 750px)": {
+      padding: "4px 4px 4px 6px",
+    },
   },
   colorCircle: {
     width: 20,
     height: 20,
     borderRadius: "50%",
     marginRight: 4,
+    "@media (max-width: 750px)": {
+      width: 12,
+      height: 12,
+    },
   },
   name: {
     fontSize: 10,
     color: "rgb(25, 20, 43)",
     paddingRight: 6,
     fontFamily: "Larsseit Bold",
+    "@media (max-width: 750px)": {
+      fontSize: 8,
+    },
   },
 }));
 
