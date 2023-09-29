@@ -57,7 +57,7 @@ const useStyles = makeStyles(() => ({
       marginLeft: "auto",
       marginRight: "auto",
       padding: "0px 80px",
-      gap: "48px",
+      gap: 48,
     },
   },
   link: {

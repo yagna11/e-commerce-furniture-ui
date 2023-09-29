@@ -178,7 +178,7 @@ const useStyles = makeStyles(() => ({
   priceContainer: {
     display: "flex",
     alignItems: "center",
-    gap: "4px",
+    gap: 4,
     flexWrap: "wrap",
   },
   productPrice: {
