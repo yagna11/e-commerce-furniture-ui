@@ -6,6 +6,7 @@ import "../fonts.css";
 
 const MobileDropdown = ({ items }) => {
   const [openHeader, setOpenHeader] = useState(false);
+  const [selectedHeader, setSelectedHeader] = useState(items[0]);
   const classes = useStyles({ openHeader });
 
   return (
@@ -14,7 +15,7 @@ const MobileDropdown = ({ items }) => {
       onClick={() => setOpenHeader(!openHeader)}
     >
       <div className={classes.header}>
-        {items[0]}
+        {selectedHeader}
         <div className={classes.svgContainer}>
           {openHeader ? (
             <KeyboardArrowUpIcon fontSize="large" />
@@ -29,6 +30,7 @@ const MobileDropdown = ({ items }) => {
             className={classes.link}
             href={`#${item.replace(/\s+/g, "-").toLowerCase()}`}
             key={item}
+            onClick={() => setSelectedHeader(item)}
           >
             <div key={item} className={classes.header}>
               {item}
