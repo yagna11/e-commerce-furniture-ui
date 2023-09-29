@@ -53,7 +53,7 @@ const useStyles = makeStyles(() => ({
   link: {
     color: 'inherit',
     textDecoration: 'none',
-    cursor: 'pointer'
+    cursor: 'pointer',
   }
 }));
 

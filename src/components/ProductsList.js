@@ -26,10 +26,14 @@ const ProductsList = () => {
       </div>
       <ProductsHeader items={headerItems} />
       {productData.products.map((category) => (
-        <div key={category.category} id={category.category.replace(/\s+/g, "-").toLowerCase()} style={{
-          marginTop: '-50px',
-          paddingTop: '50px'
-        }}>
+        <div
+          key={category.category}
+          id={category.category.replace(/\s+/g, "-").toLowerCase()}
+          style={{
+            marginTop: "-50px",
+            paddingTop: "50px",
+          }}
+        >
           <h2 className={classes.category}>{category.category}</h2>
           <div className={classes.productContainer}>
             {category.items.map((item) => (
@@ -116,38 +120,37 @@ const useStyles = makeStyles(() => ({
     fontFamily: "Quincy Regular",
     fontSize: 32,
     padding: "32px 80px 0px",
-    "&::before": {
-      content: "''",
-      display: "block",
-      height: 60, 
-      marginTop: -60, 
-      visibility: "hidden",
-    }
   },
   productContainer: {
     display: "grid",
     gridTemplateColumns: "repeat(3, 1fr)",
-    gap: 20,
+    gap: 40,
     paddingLeft: 20,
     margin: "0 auto",
-    maxWidth: 1280,
-  },
-
-  productItem: {
-    width: 300,
+    maxWidth: 1440,
+    "@media (max-width: 750px)": {
+      display: "grid",
+      gridTemplateColumns: "repeat(2, 1fr)",
+    },
   },
   productImage: {
     position: "relative",
-    width: 400,
-    height: 300,
-    padding: "30px 0",
-    background: "#f5f6f8",
-    borderRadius: 30,
     overflow: "hidden",
+    marginBottom: 12,
+    borderRadius: 30,
+   
+    "@media (max-width: 750px)": {
+      objectFit: "contain",
+      width: 400,
+      height: 300,
+      padding: "30px 0",
+      background: "#f5f6f8",
+    },
   },
   image: {
     width: "100%",
     height: "100%",
+    // borderRadius: 30,
   },
   productName: {
     color: "rgb(43, 44, 110)",
