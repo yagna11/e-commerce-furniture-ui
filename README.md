@@ -37,3 +37,7 @@ Desktop:
 <img width="400" alt="Screenshot 2023-09-29 at 10 27 26 AM" src="https://github.com/yagna11/e-commerce-furniture-ui/assets/70176837/3ed24fe8-3ab6-4b59-8fae-fd46051f00f0">
 
 <img width="400" alt="Screenshot 2023-09-29 at 10 25 26 AM" src="https://github.com/yagna11/e-commerce-furniture-ui/assets/70176837/3fcbd897-1cf2-4445-a3e3-8c1400ad8ac2">
+
+# Future improvements:
+- refactor the code to add more reusability to the code
+- Add test cases
