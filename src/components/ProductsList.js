@@ -133,7 +133,6 @@ const useStyles = makeStyles(() => ({
     padding: "32px 80px 0px",
     "@media (min-width: 1250px)": {
       fontSize: 48,
-      textAlign: "start",
     },
   },
   productContainer: {
