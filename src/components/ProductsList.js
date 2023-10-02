@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useEffect, useState } from "react";
 import productData from "../data/products.json";
 import ProductsHeader from "./ProductsHeader";
 import ColorChip from "./ColorChip";
@@ -15,6 +15,30 @@ const headerItems = [
 
 const ProductsList = () => {
   const classes = useStyles();
+  const [activeCategory, setActiveCategory] = useState(null);
+  const categoryRefs = useRef({});
+
+  useEffect(() => {
+    const handleScroll = () => {
+      let active = null;
+      const headerHeight = 70;
+
+      for (const category in categoryRefs.current) {
+        const ref = categoryRefs.current[category];
+        const position = ref.getBoundingClientRect();
+        if (position.top <= headerHeight && position.bottom >= headerHeight) {
+          active = category;
+          break;
+        }
+      }
+      setActiveCategory(active);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <div>
@@ -24,11 +48,12 @@ const ProductsList = () => {
         <div className={classes.title}>Tables</div>
         <div className={classes.subText}>A perfect pairing to your sofa.</div>
       </div>
-      <ProductsHeader items={headerItems} />
+      <ProductsHeader items={headerItems} activeCategory={activeCategory} />
       {productData.products.map((category) => (
         <div
           key={category.category}
           id={category.category.replace(/\s+/g, "-").toLowerCase()}
+          ref={(el) => (categoryRefs.current[category.category] = el)}
           style={{
             marginTop: "-50px",
             paddingTop: "50px",

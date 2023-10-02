@@ -4,10 +4,9 @@ import MobileDropdown from "./MobileDropdown";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import "../fonts.css";
 
-const ProductsHeader = ({ items }) => {
+const ProductsHeader = ({ items, activeCategory }) => {
   const classes = useStyles();
   const isMobile = useMediaQuery("(max-width:870px)");
-  const [isLinkActive, setIsLinkActive] = useState(null);
 
   return isMobile ? (
     <MobileDropdown items={items} />
@@ -17,13 +16,10 @@ const ProductsHeader = ({ items }) => {
         {items.map((item) => (
           <a
             className={`${classes.link} ${
-              item === isLinkActive ? classes.active : ""
+              item === activeCategory ? classes.active : ""
             }`}
             href={`#${item.replace(/\s+/g, "-").toLowerCase()}`}
             key={item}
-            onClick={() => {
-              setIsLinkActive(item);
-            }}
           >
             <span>{item}</span>
           </a>
