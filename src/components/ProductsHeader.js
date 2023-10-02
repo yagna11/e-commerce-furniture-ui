@@ -9,7 +9,7 @@ const ProductsHeader = ({ items, activeCategory }) => {
   const isMobile = useMediaQuery("(max-width:870px)");
 
   return isMobile ? (
-    <MobileDropdown items={items} />
+    <MobileDropdown items={items} activeCategory={activeCategory} />
   ) : (
     <div className={classes.banner}>
       <div className={classes.bannerText}>

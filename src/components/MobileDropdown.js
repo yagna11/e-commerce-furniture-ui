@@ -1,15 +1,20 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { makeStyles } from "@mui/styles";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import "../fonts.css";
 
-const MobileDropdown = ({ items }) => {
+const MobileDropdown = ({ items, activeCategory }) => {
   const [openHeader, setOpenHeader] = useState(false);
   const [selectedHeader, setSelectedHeader] = useState(items[0]);
   const classes = useStyles({ openHeader });
 
-  
+  useEffect(() => {
+    if (activeCategory) {
+      setSelectedHeader(activeCategory);
+    }
+  }, [activeCategory]);
+
   return (
     <div
       className={classes.dropdownContainer}
