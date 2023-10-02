@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { makeStyles } from "@mui/styles";
 import MobileDropdown from "./MobileDropdown";
 import useMediaQuery from "@mui/material/useMediaQuery";
